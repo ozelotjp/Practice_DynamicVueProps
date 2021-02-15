@@ -1,0 +1,34 @@
+{
+  "name": "practice-dynamic-vue-props",
+  "extensions": [
+    // General
+    "editorconfig.editorconfig",
+    "codezombiech.gitignore",
+    "eamodio.gitlens",
+    // Vue
+    "octref.vetur",
+    // ESLint
+    "dbaeumer.vscode-eslint"
+  ],
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.tslint": true,
+      "source.fixAll": true
+    },
+    "vetur.validation.template": false,
+    "vetur.format.enable": false,
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "vue"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "vetur.experimental.templateInterpolationService": true
+  },
+  // Docker-Compose
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app"
+}
